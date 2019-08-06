@@ -119,6 +119,7 @@ const HomeStack = createStackNavigator(
     DetailsScreen: HomeModules.DetailsScreen,
     LikesList: HomeModules.LikeList,
     PickerTest: HomeModules.PickerTest,
+    ModalIndicatorExample: HomeModules.ModalIndicatorExample,
     ScrollableTabView: {
       screen: FeedModules.ScrollableTabPage
     }

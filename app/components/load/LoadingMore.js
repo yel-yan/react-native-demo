@@ -27,7 +27,7 @@ export default class LoadingMore extends Component<Props> {
     showText: true,
     text: '——  我是有底线的  ——',
     icon: require('../../assets/image/blank.png'),
-    type: 'Wave', //ThreeBounce
+    type: 'Wave', //ThreeBounce Bounce
     showSimple: false
   };
 

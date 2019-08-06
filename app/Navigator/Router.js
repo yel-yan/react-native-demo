@@ -15,6 +15,7 @@ import GeolocationScreen from '../pages/home/Geolocation/GeolocationScreen';
 import DetailsScreen from '../pages/home/DetailsScreen';
 import LikeList from '../pages/home/spinkit/LikeList';
 import PickerTest from '../pages/home/datetime/PickerTest';
+import ModalIndicatorExample from '../pages/home/ModalIndicatorExample/ModalIndicatorExample';
 
 import SegmentedViewScreen from '../pages/home/SegmentedView/SegmentedViewScreen';
 
@@ -40,7 +41,8 @@ const HomeModules = {
   SegmentedViewScreen,
   DetailsScreen,
   LikeList,
-  PickerTest
+  PickerTest,
+  ModalIndicatorExample
 };
 //认证页面
 const AuthModules = { AuthLoadingScreen, SignInScreen };

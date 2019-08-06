@@ -13,6 +13,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import { SafeAreaView } from 'react-navigation';
 import NavigatorPage from '../../components/NavigatorPage';
 import styleUtil from '../../common/styleUtil';
+import { ListRow } from 'teaset';
 
 export default class HomeScreen extends NavigatorPage {
   static defaultProps = {
@@ -25,38 +26,114 @@ export default class HomeScreen extends NavigatorPage {
     return (
       <ScrollView style={styles.container}>
         <SafeAreaView forceInset={{ horizontal: 'always' }}>
-          <Text>Home!</Text>
-          <Icon name="ios-person" size={30} color="#4F8EF7" />
-          <Text>
-            Lorem <Icon name="ios-book" color="#4F8EF7" /> Ipsum
-          </Text>
-
-          <Button title="Go to me" onPress={() => NavigationService.navigate('me', { userName: 'Lucy' })} />
-          <Button title="Go to auth" onPress={() => this.props.navigation.navigate('Other')} />
-          <Button title="Go to ImagePicker" onPress={() => this.props.navigation.navigate('ImagePickerScreen')} />
-          <Button
-            title="Go to ScrollableTabView"
+          <ListRow
+            title="Go to me"
+            onPress={() => NavigationService.navigate('me', { userName: 'Lucy' })}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="Go to auth"
+            onPress={() => this.props.navigation.navigate('Other')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="ImagePicker"
+            onPress={() => this.props.navigation.navigate('ImagePickerScreen')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="ScrollableTabView"
             onPress={() => this.props.navigation.navigate('ScrollableTabView')}
+            topSeparator="full"
+            bottomSeparator="full"
           />
-          <Button title="Go to Test" onPress={() => this.props.navigation.navigate('Test')} />
-          <Button title="Go to DatePicker" onPress={() => this.props.navigation.navigate('DatePicker')} />
-          <Button
-            title="Go to CalendarsScreen"
+          <ListRow
+            title="Test"
+            onPress={() => this.props.navigation.navigate('Test')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="DatePicker"
+            onPress={() => this.props.navigation.navigate('DatePicker')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="CalendarsScreen"
             onPress={() => this.props.navigation.navigate('CalendarsScreen')}
+            topSeparator="full"
+            bottomSeparator="full"
           />
-          <Button title="Go to Agenda" onPress={() => this.props.navigation.navigate('Agenda')} />
-          <Button title="动画" onPress={() => this.props.navigation.navigate('AnimatedScreen')} />
-          <Button title="GeolocationScreen" onPress={() => this.props.navigation.navigate('GeolocationScreen')} />
-          <Button
+          <ListRow
+            title="Agenda"
+            onPress={() => this.props.navigation.navigate('Agenda')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="AnimatedScreen"
+            onPress={() => this.props.navigation.navigate('AnimatedScreen')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="GeolocationScreen"
+            onPress={() => this.props.navigation.navigate('GeolocationScreen')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
             title="MOBX"
             onPress={() => this.props.navigation.navigate('MobxStoreScreen', { name: 'niunai' })}
+            topSeparator="full"
+            bottomSeparator="full"
           />
-          <Button title="Realm" onPress={() => this.props.navigation.navigate('RealmTestScreen')} />
-          <Button title="SegmentedView" onPress={() => this.props.navigation.navigate('SegmentedViewScreen')} />
-          <Button title="TopNavigator" onPress={() => this.props.navigation.navigate('TopNavigator')} />
-          <Button title="DetailsScreen" onPress={() => this.props.navigation.navigate('DetailsScreen')} />
-          <Button title="LikesList" onPress={() => this.props.navigation.navigate('LikesList')} />
-          <Button title="PickerTest" onPress={() => this.props.navigation.navigate('PickerTest')} />
+          <ListRow
+            title="RealmTestScreen"
+            onPress={() => this.props.navigation.navigate('RealmTestScreen')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="SegmentedViewScreen"
+            onPress={() => this.props.navigation.navigate('SegmentedViewScreen')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="TopNavigator"
+            onPress={() => this.props.navigation.navigate('TopNavigator')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="DetailsScreen"
+            onPress={() => this.props.navigation.navigate('DetailsScreen')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="LikesList"
+            onPress={() => this.props.navigation.navigate('LikesList')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="PickerTest"
+            onPress={() => this.props.navigation.navigate('PickerTest')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
+          <ListRow
+            title="ModalIndicatorExample"
+            onPress={() => this.props.navigation.navigate('ModalIndicatorExample')}
+            topSeparator="full"
+            bottomSeparator="full"
+          />
         </SafeAreaView>
       </ScrollView>
     );
