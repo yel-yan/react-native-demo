@@ -15,7 +15,7 @@
     "moment": "^2.24.0",
     "promise-polyfill": "^8.1.0",
     "react": "16.8.6",
-    "react-native": "^0.59.8",
+    "react-native": "^0.62.3",
     "react-native-amap-geolocation": "^1.0.4",
     "react-native-calendars": "^1.196.0",
     "react-native-device-info": "^2.1.0",
